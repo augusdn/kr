@@ -3,33 +3,33 @@
 <head>
     <meta charset="utf-8">
     
-    <title>[2018] 북미 롤 한글 패치 2018/02/24 적용 확인 | Augusdn</title>
+    <title>ssh 로 서버 접속하는 툴 putty | Augusdn</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="League of legends,리그 오브 레전드,롤,한글 패치" />
+        <meta name="keywords" content="프로그래밍,SSH,putty,푸티,xming,telnet" />
     
 
     
-        <meta name="description" content="해외 롤 한글 패치8.3 패치 이후로 부터 기존에 존재하던 북미 및 모든 해외 리그 오브 레전드의 한글 패치가 막혓는데요.개인적으로 간단하게 수정해서 사용하고 있었던 방법인데 아직 잘 퍼지지 않아서 이렇게 공유해봅니다.파일 수정 자체는 그렇게 어렵지 않지만 어떤식으로 바꿔야 하는지 설명하기보다 직접 파일을 올리는게 좋을거같아 서버별 파일로 공유해드립니다.">
-<meta name="keywords" content="League of legends,리그 오브 레전드,롤,한글 패치">
+        <meta name="description" content="원격으로 SSH 서버 접속하기  원격으로 SSH 서버 접속하기 PuTTY 란? PuTTY 다운로드   Xming Xming 다운로드 PuTTY에 Xming 연동하기      PuTTY 란?PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platfor">
+<meta name="keywords" content="프로그래밍,SSH,putty,푸티,xming,telnet">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[2018] 북미 롤 한글 패치 2018&#x2F;02&#x2F;24 적용 확인">
-<meta property="og:url" content="https://augusdn.github.io/kr/2018/02/17/북미-롤-한글-패치/index.html">
+<meta property="og:title" content="ssh 로 서버 접속하는 툴 putty">
+<meta property="og:url" content="https://augusdn.github.io/kr/2016/03/08/putty-and-xming/index.html">
 <meta property="og:site_name" content="Augusdn">
-<meta property="og:description" content="해외 롤 한글 패치8.3 패치 이후로 부터 기존에 존재하던 북미 및 모든 해외 리그 오브 레전드의 한글 패치가 막혓는데요.개인적으로 간단하게 수정해서 사용하고 있었던 방법인데 아직 잘 퍼지지 않아서 이렇게 공유해봅니다.파일 수정 자체는 그렇게 어렵지 않지만 어떤식으로 바꿔야 하는지 설명하기보다 직접 파일을 올리는게 좋을거같아 서버별 파일로 공유해드립니다.">
+<meta property="og:description" content="원격으로 SSH 서버 접속하기  원격으로 SSH 서버 접속하기 PuTTY 란? PuTTY 다운로드   Xming Xming 다운로드 PuTTY에 Xming 연동하기      PuTTY 란?PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platfor">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://augusdn.github.io/kr/images/thumbnail/lol-logo.png">
-<meta property="og:updated_time" content="2018-05-18T07:58:42.575Z">
+<meta property="og:image" content="https://augusdn.github.io/images/thumbnail/putty.png">
+<meta property="og:updated_time" content="2021-07-02T13:23:48.152Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[2018] 북미 롤 한글 패치 2018&#x2F;02&#x2F;24 적용 확인">
-<meta name="twitter:description" content="해외 롤 한글 패치8.3 패치 이후로 부터 기존에 존재하던 북미 및 모든 해외 리그 오브 레전드의 한글 패치가 막혓는데요.개인적으로 간단하게 수정해서 사용하고 있었던 방법인데 아직 잘 퍼지지 않아서 이렇게 공유해봅니다.파일 수정 자체는 그렇게 어렵지 않지만 어떤식으로 바꿔야 하는지 설명하기보다 직접 파일을 올리는게 좋을거같아 서버별 파일로 공유해드립니다.">
-<meta name="twitter:image" content="https://augusdn.github.io/kr/images/thumbnail/lol-logo.png">
+<meta name="twitter:title" content="ssh 로 서버 접속하는 툴 putty">
+<meta name="twitter:description" content="원격으로 SSH 서버 접속하기  원격으로 SSH 서버 접속하기 PuTTY 란? PuTTY 다운로드   Xming Xming 다운로드 PuTTY에 Xming 연동하기      PuTTY 란?PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platfor">
+<meta name="twitter:image" content="https://augusdn.github.io/images/thumbnail/putty.png">
     
 
 
     
-    <link rel="canonical" href="https://augusdn.github.io/kr/2018/02/17/북미-롤-한글-패치/"/>
+    <link rel="canonical" href="https://augusdn.github.io/kr/2016/03/08/putty-and-xming/"/>
 
 
     
@@ -164,18 +164,18 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/kr/categories/ETC/">ETC</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/kr/categories/ETC/Game/">Game</a>
+    <a class="page-title-link" href="/kr/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/kr/categories/Dev/Tools/">Tools</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-북미-롤-한글-패치" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-putty-and-xming" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        [2018] 북미 롤 한글 패치 2018/02/24 적용 확인
+        ssh 로 서버 접속하는 툴 putty
         </h1>
     
 
@@ -185,40 +185,49 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/kr/2018/02/17/북미-롤-한글-패치/" class="article-date">
-            <time datetime="2018-02-16T15:15:11.000Z" itemprop="datePublished">2018-02-17</time>
+        <a href="/kr/2016/03/08/putty-and-xming/" class="article-date">
+            <time datetime="2016-03-08T22:45:21.000Z" itemprop="datePublished">2016-03-09</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/kr/tags/League-of-legends/">League of legends</a>, <a class="tag-link" href="/kr/tags/롤/">롤</a>, <a class="tag-link" href="/kr/tags/리그-오브-레전드/">리그 오브 레전드</a>, <a class="tag-link" href="/kr/tags/한글-패치/">한글 패치</a>
+        <a class="tag-link" href="/kr/tags/SSH/">SSH</a>, <a class="tag-link" href="/kr/tags/putty/">putty</a>, <a class="tag-link" href="/kr/tags/telnet/">telnet</a>, <a class="tag-link" href="/kr/tags/xming/">xming</a>, <a class="tag-link" href="/kr/tags/푸티/">푸티</a>, <a class="tag-link" href="/kr/tags/프로그래밍/">프로그래밍</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h1 id="해외-롤-한글-패치"><a href="#해외-롤-한글-패치" class="headerlink" title="해외 롤 한글 패치"></a>해외 롤 한글 패치</h1><p>8.3 패치 이후로 부터 기존에 존재하던 북미 및 모든 해외 리그 오브 레전드의 한글 패치가 막혓는데요.<br>개인적으로 간단하게 수정해서 사용하고 있었던 방법인데 아직 잘 퍼지지 않아서 이렇게 공유해봅니다.<br>파일 수정 자체는 그렇게 어렵지 않지만 어떤식으로 바꿔야 하는지 설명하기보다 직접 파일을 올리는게 좋을거같아 서버별 파일로 공유해드립니다.</p>
-<p>본인이 플레이 중인 서버용 파일이 존재하지 않는다면 저에게 이메일로 서버명과 system.yaml 파일을 보내주시고 댓글로 원하는 서버 이름을 남겨주세요, 최대한 빠르게 이 페이지에 업데이트 하도록 하겠습니다.</p>
-<h2 id="패치-적용"><a href="#패치-적용" class="headerlink" title="패치 적용"></a>패치 적용</h2><p>포스트 가장 아래에 존재하는 서버별 파일에서 본인의 서버에 해당하는 system_XXX.yaml 파일을 다운로드 합니다.<br>다운로드후 system_XXX.yaml 파일을 system.yaml 로 이름변경 해주세요.</p>
-<p>이후 롤이 설치된 폴더로 이동하는데, 롤을 실행할때 사용하는 아이콘을 우클릭후 -&gt; 속성 -&gt; 대상찾기 를 누르시면 하위폴더로 바로 이동 가능합니다.</p>
-<p>롤이 설치된 폴더 이름이 Riot Games\League of Legends\ 라고 했을시,<br>Riot Games\League of Legends\RADS\projects\league_client\releases 로 들어갑니다.<br>그리고 releases 폴더 안에 존재하는 폴더들중 가장 숫자가 큰 폴더로 들어가셔서 deploy 폴더로 들어갑니다.</p>
-<p>2018-02-24 오세아니아 서버 기준 경로는<br><code>Riot Games\League of Legends\RADS\projects\league_client\releases\0.0.0.126\deploy</code> 입니다.</p>
-<p>해당 폴더에 다운받고 이름변경한 system.yaml을 넣어줍니다. 기존에 존재하는 파일 위에 덮어 쓰세요.<br>그리고 system.yaml을 복사해서 <code>&quot;Riot Games\League of Legends\&quot;</code> 폴더에다가도 붙혀넣어 줍니다.</p>
-<p>해당 작업이 끝나면 롤을 재시작 해주세요, 그러면 한글 패치가 진행될텐데요, 업데이트 작업이 끝나면 위의 작업을 한번 더 해줍니다.<br><strong>system.yaml 파일을 옮기고 롤을 처음 실행시 한국 서버로 접속되는것이 정상이며, 패치가 끝나면 다시 system.yaml파일을 덮어씌워주고 재접속해야 원하는 서버로 접속 가능합니다</strong></p>
-<p>한글 파일들을 다운로드 받느라 덮어씌워놨던 system.yaml 파일이 바뀌는 경우가 많습니다.</p>
-<p>로그인이 안될시 댓글에 문의 주세요.</p>
-<h2 id="유럽-서버-패치-적용법"><a href="#유럽-서버-패치-적용법" class="headerlink" title="유럽 서버 패치 적용법!"></a>유럽 서버 패치 적용법!</h2><p>현재 유럽서버는 0.0.0.126 가 최신이 아니라 0.0.0.127 이 라는 피드백을 받앗는데요!<br>0.0.0.127 폴더에 system.yaml 파일을 덮어 씌우고 패치를 진행 하시면 0.0.0.126 폴더가 생길텐데<br>패치 완료후 0.0.0.126 폴더와 <code>Riot Games\League of Legends</code> 폴더에 system.yaml 파일을 다시 덮어씌워 주시면 해결된다고 합니다!</p>
-<h2 id="서버별-파일"><a href="#서버별-파일" class="headerlink" title="서버별 파일"></a>서버별 파일</h2><p>서버 추가를 원하시는 분들은 댓글에 원하시는 서버를 남겨주시고, 이메일로 본인이 사용하는 system.yaml 파일과 원하는 서버를 적어서 보내주세요.<br>augusdn@gmail.com 로 보내주시면 됩니다.</p>
+            <h1 id="원격으로-SSH-서버-접속하기"><a href="#원격으로-SSH-서버-접속하기" class="headerlink" title="원격으로 SSH 서버 접속하기"></a>원격으로 SSH 서버 접속하기</h1><p><img src="putty.png" alt="putty"></p>
+<ul>
+<li><a href="#원격으로-SSH-서버-접속하기">원격으로 SSH 서버 접속하기</a><ul>
+<li><a href="#PuTTY-란">PuTTY 란?</a><ul>
+<li><a href="#PuTTY-다운로드">PuTTY 다운로드</a></li>
+</ul>
+</li>
+<li><a href="#Xming">Xming</a><ul>
+<li><a href="#Xming-다운로드">Xming 다운로드</a></li>
+<li><a href="#PuTTY에-Xming-연동하기">PuTTY에 Xming 연동하기</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="PuTTY-란"><a href="#PuTTY-란" class="headerlink" title="PuTTY 란?"></a>PuTTY 란?</h2><blockquote><p>PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.</p>
+<footer><strong>PuTTY.org</strong><cite><a href="http://www.putty.org/" target="_blank" rel="noopener">www.putty.org</a></cite></footer></blockquote>
+<p>위 문장을 살펴보시면 PuTTY는 SSH와 telnet을 이용하는데 쓰이는 클라이언트이며, Simon Tatham이란 개발자가 만든 윈도우 전용 오픈소스 소프트웨어 라고 설명 되있네요.</p>
+<p>윈도우에서 SSH를 사용하는데 가장 편한 툴이라고 생각합니다.</p>
+<h3 id="PuTTY-다운로드"><a href="#PuTTY-다운로드" class="headerlink" title="PuTTY 다운로드"></a>PuTTY 다운로드</h3><p>아래 링크에서 최신버전의 PuTTY를 받을수 있습니다. <strong><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank" rel="noopener">링크</a></strong>.<br>사용하시는 윈도우 버전에 따라 32비트, 64비트로 나뉘는데요, 본인의 윈도우에 맞는 버전을 골라서 쓰시면 됩니다.<br>본인의 윈도우가 몇비트 운영체제인지 확실하게 모르신다면 아래 FAQ 링크를 클릭하시면 확인 할수있는 사이트로 연결됩니다.<br><strong><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-32bit-64bit" target="_blank" rel="noopener">FAQ</a></strong>.</p>
 <hr>
-<h2 id="8-4-패치"><a href="#8-4-패치" class="headerlink" title="8.4 패치"></a>8.4 패치</h2><p>8.4 패치 전후로 몇몇 서버에서 기존 파일들로 접속이 안되거나 업데이트가 안되는 상황이 발견되어 모든 서버 system.yaml 파일을 수정햇습니다.</p>
-<p>2018-02-28 7:43 PM KST 에 업데이트 완료!</p>
-<p><strong>기존 파일이 작동 안하시던 분들은 새로 파일을 다운받아서 적용시켜 주세요.</strong></p>
-<p>만약 새로운 파일들로 업데이트후에도 안되시는 분들은 댓글을 남겨주세요!</p>
+<h2 id="Xming"><a href="#Xming" class="headerlink" title="Xming"></a>Xming</h2><blockquote><p>Xming is the leading X Window System Server for Microsoft Windows 8/7/Vista/XP (+ server 2012/2008/2003). It is fully featured, small and fast, simple to install and because it is standalone native Microsoft Windows, easily made portable (not needing a machine-specific installation).</p>
+<footer><strong>Xming</strong><cite><a href="https://sourceforge.net/projects/xming/" target="_blank" rel="noopener">sourceforge.net/projects/xming</a></cite></footer></blockquote>
+<p>홈페이지에는 위처럼 설명이 되어 있는데요, 간단히 PuTTY랑 같이 사용할수 있는 SSH용 GUI 입니다.<br>PuTTY와 함께 사용하면 SSH를 통해 오는 그래픽 출력을 가능케 해줍니다.</p>
+<h3 id="Xming-다운로드"><a href="#Xming-다운로드" class="headerlink" title="Xming 다운로드"></a>Xming 다운로드</h3><p>아래 링크에서 Xming을 다운받을수 있습니다.<br><strong><a href="https://sourceforge.net/projects/xming/" target="_blank" rel="noopener">링크</a></strong></p>
+<h3 id="PuTTY에-Xming-연동하기"><a href="#PuTTY에-Xming-연동하기" class="headerlink" title="PuTTY에 Xming 연동하기"></a>PuTTY에 Xming 연동하기</h3><p>Run PuTTY, go under Connection-&gt;SSH-&gt;X11.<br>PuTTY에 연결(Connection)-&gt;SSH-&gt;X11 로 들어가 주세요<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Connection</span><br><span class="line">├── ...</span><br><span class="line">├── SSH</span><br><span class="line">|   ├── ...</span><br><span class="line">|   ├── X11  &lt;---</span><br><span class="line">|   ├── ...</span><br><span class="line">├── ...</span><br></pre></td></tr></table></figure></p>
+<p><img src="setup.png" alt="setup"><br><code>&quot;Enable X11 forwarding&quot;</code> 이라고 되어 있는 항목을 <strong>체크</strong> 한다음,  <code>&quot;X display location&quot;</code> 항목 안에 <code>localhost:0</code> 로 맞춰주시면 됩니다.</p>
 <hr>
-<h3 id="기존-패치-파일-삭제후-새로-포스트-작성햇습니다"><a href="#기존-패치-파일-삭제후-새로-포스트-작성햇습니다" class="headerlink" title="기존 패치 파일 삭제후 새로 포스트 작성햇습니다."></a>기존 패치 파일 삭제후 새로 포스트 작성햇습니다.</h3><p><a href="https://goo.gl/b4yy1i" target="_blank" rel="noopener">https://goo.gl/b4yy1i</a></p>
 
         </div>
         <footer class="article-footer">
@@ -226,7 +235,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="https://augusdn.github.io/kr/2018/02/17/북미-롤-한글-패치/" data-id="ckioe4vjx0053fgu078e5a4y6" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="https://augusdn.github.io/kr/2016/03/08/putty-and-xming/" data-id="ckqmdbge0002o1po17z6agq2t" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -323,22 +332,16 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/kr/2018/03/21/2018-롤-한글패치-2018-03-21-확인/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/kr/2016/03/22/Doomsday-Algorithm/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">다음글</strong>
         <p class="article-nav-title">
         
-            [2018] 롤 한글패치 2018/03/21 확인
+            C 언어로 둠스데이 알고리즘 구현하기
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
-    
-        <a href="/kr/2018/01/21/hexo-theme/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">이전글</strong>
-        <p class="article-nav-title">Hexo 테마</p>
-        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
-        </a>
     
 </nav>
 
@@ -511,7 +514,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/kr/" class="logo"></a>
                 </h1>
-                <p>&copy; 2020 Augustine Lee</p>
+                <p>&copy; 2021 Augustine Lee</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>
@@ -523,7 +526,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'augusdn';
     
     
-    var disqus_url = 'https://augusdn.github.io/kr/2018/02/17/북미-롤-한글-패치/';
+    var disqus_url = 'https://augusdn.github.io/kr/2016/03/08/putty-and-xming/';
     
     (function() {
     var dsq = document.createElement('script');
